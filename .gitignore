@@ -1,0 +1,8 @@
+build
+*.vim
+*.pyc
+.coverage
+*.swp
+*.swo
+.ropeproject/*
+.idea/*
