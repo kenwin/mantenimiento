@@ -1,59 +1,60 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>SmD - En Mantenimiento</title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, Sans-serif;
-        font-size: 14px;
-        margin: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <center>
-      <div id="Login" class="stretch">
-        <div class="container">
-          <div id="lang_es">
-            <img src="logo.png" border="0" width="350" />
-            <br/>
-            <h1>SMD en Mantenimiento</h1>
-            <p>
-            Estimado cliente, el sistema se encontrar&aacute; en mantenimiento desde las<br><br/>
-            <b>20:00 hs ART (GMT -03:00)</b><br/><br/>
-            hasta aproximadamente las<br/><br/>
-            <b>24:00 hs ART (GMT -03:00).</b>
-            <br/><br/>
-            <small>Disculpe los inconvenientes. Por cualquier consulta no dude en contactarnos.</small>
-            </p>
-          </div>
-          <div id="lang_pt" style="display: none;">
-            <img src="static/images/app/SmD/logo.png" border="0" width="350" />
-            <br/>
-            <h1>Servidor em Manutenção</h1>
-            <p>
-            Prezado cliente, o sistema estar&aacute; em manutenção a partir de<br><br/>
-            <b>20:00 hs ART (GMT -03:00)</b><br/><br/>
-            até cerca de<br/><br/>
-            <b>24:00 hs ART (GMT -03:00).</b>
-            <br/><br/>
-            <small>Desculpe pela inconveniência. Para qualquer dúvida entre em contato conosco.</small>
-            </p>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <title>SmD - Servidor en Mantenimiento / Servidor em Manutenção </title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, Sans-serif;
+      font-size: 14px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <div id="Login" class="stretch">
+      <div class="container">
+        <div id="lang_es">
+          <img src="logo.png" border="0" width="350" />
+          <br/>
+          <h1>Servidor en Mantenimiento</h1>
+          <p>
+          Estimado cliente, el servidor se encontrar&aacute; en mantenimiento desde las<br>
+          <b>22:00 hs ART (GMT -03:00)</b><br/>
+          hasta aproximadamente las<br/>
+          <b>24:00 hs ART (GMT -03:00)</b>
+          <br/><br/>
+          <small>Disculpe los inconvenientes. Por cualquier consulta no dude en contactarnos.</small>
+          </p>
+        </div>
+        <div id="lang_pt" style="display: none;">
+          <img src="logo.png" border="0" width="350" />
+          <br/>
+          <h1>Servidor em Manutenção</h1>
+          <p>
+          Prezado cliente, o servidor estar&aacute; em manutenção a partir de<br>
+          <b>22:00 hs ART (GMT -03:00)</b><br/>
+          até cerca de<br/>
+          <b>24:00 hs ART (GMT -03:00)</b>
+          <br/><br/>
+          <small>Desculpe pela inconveniência. Para qualquer dúvida entre em contato conosco.</small>
+          </p>
         </div>
       </div>
-      <div class="footer">
-        &copy;
-        <script type="text/javascript">
-          if (navigator.language.contains('pt') == true) {
+    </div>
+    <div class="footer">
+      &copy;
+      <script type="text/javascript">
+          if (window.navigator.language.startsWith('pt') == true) {
+            console.log('lalal')
             document.getElementById('lang_es').style.display = 'none';
-            document.getElementById('lang_pt').style.display'';
+            document.getElementById('lang_pt').style.display = '';
           }
-          var now = new Date();
-          document.write(now.getFullYear());
-        </script> Kenwin S.A.
-      </div>
-    </center>
-  </body>
+        var now = new Date();
+        document.write(now.getFullYear());
+      </script> Kenwin S.A.
+    </div>
+  </center>
+</body>
 </html>
